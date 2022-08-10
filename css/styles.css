@@ -1,0 +1,492 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+/* version celular hasta 500px */
+
+/* estilos generales */
+body {
+    background-color: bisque;
+}
+
+
+
+
+/* estilos del header */
+.encabezado{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "encabezado__logo encabezado__titulo"
+                         "encabezado__logo encabezado__titulo"
+                         "encabezado__menu encabezado__menu";
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(132, 126, 31);
+    margin-bottom: 5px;
+}
+.encabezado__logo{
+    grid-area: encabezado__logo;
+    width: 220px;
+    
+}
+.encabezado__menu{
+    grid-area: encabezado__menu;
+    margin-bottom: 1rem;
+}
+.encabezado__titulo{
+    grid-area: encabezado__titulo;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+   
+}
+
+.encabezado__menu--lista--linea{
+    list-style-type: none;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    
+}
+
+.encabezado__menu--lista--linea--pie{
+    display: none;
+}
+
+.encabezado__menu--lista--linea li {
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid rgba(100, 100, 100, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    background-size: 300%;
+}
+
+.encabezado__menu--lista--linea--index{
+    background-image: linear-gradient(to left, #daa000, #353535, #ffc118);
+}
+
+.encabezado__menu--lista--linea--proyectos{
+    background-image: linear-gradient(to left, #daa000, #353535, #ffc118);
+}
+
+.encabezado__menu--lista--linea--fotos{
+    background-image: linear-gradient(to left, #daa000, #353535, #ffc118);
+}
+         
+.encabezado__menu--lista--linea--nosotros{
+    background-image: linear-gradient(to left, #daa000, #353535, #ffc118);
+}
+
+.encabezado__menu--lista--linea--contacto{
+    background-image: linear-gradient(to left, #daa000, #353535, #ffc118);
+}
+
+
+/* estilos del main */
+
+
+.contenedor__media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor__media--video{
+    display: none
+    ;
+    margin-bottom: 0.8rem;
+}
+
+.contenedor__media--img{
+    margin-bottom: 1rem;
+}
+
+.contenedor__media--img2{
+    margin-bottom: 1rem;
+}
+
+.contenedor__media--img3{
+    margin-bottom: 1rem;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+                       
+}
+
+
+.proyecto__fases{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.proyecto__datos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.proyecto__concepto{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.proyecto__antiproyecto{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.proyecto__presupuesto{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.proyecto__ejecucion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.proyecto__obra{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.proyecto__titulo--contract{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.proyecto__titulo--descripcion{
+    text-align: center;
+}
+
+
+main .nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros__camila{
+    margin-bottom: 3rem;
+}
+
+.nosotros__ale{
+    margin-bottom: 3rem;
+}
+.nosotros__jaqui{
+    margin-bottom: 3rem;
+}
+.nosotros__team--img{
+    width: 20rem;
+    height: 20rem;
+}
+
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* estilos de section */
+
+section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas: "contenido contenido contenido"
+                         "asesoramiento asesoramiento asesoramiento"
+                         "programa programa programa"
+                         "desarrollo desarrollo desarrollo"
+                         "localizacion localizacion localizacion"
+                         "resultado resultado resultado"
+                         "santayana alki arpel"
+                         "ton villegas abugar";;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+.contenido{
+    grid-area: contenido;
+    
+}
+
+.asesoramiento{
+    grid-area: asesoramiento;
+    margin: 0 4rem 0 4rem;
+}
+.programa{
+    grid-area: programa;
+    
+}
+
+.desarrollo{
+    grid-area: desarrollo;
+    margin: 0 4rem 0 4rem;
+}
+.localizacion{
+    grid-area: localizacion;
+   
+}
+.resultado{
+    grid-area: resultado;
+    margin: 0 4rem 0 4rem;
+}
+.santayana{
+    grid-area: santayana;
+}
+.alki{
+    grid-area: alki;
+}
+.arpel{
+    grid-area: arpel;
+}
+.ton{
+    grid-area: ton;
+}
+.villegas{
+    grid-area: villegas;
+}
+.abugar{
+    grid-area: abugar;
+}
+
+
+
+
+/* estilos del footer */
+
+footer {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* mediaqueries */ 
+/* para tablet arriba de 500 px hasta 1080px*/ 
+@media screen and (min-width:500px){
+    .encabezado{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "encabezado__logo encabezado__menu"
+                             "encabezado__titulo encabezado__menu";
+        
+    }
+
+    .encabezado__menu--lista--linea li {
+        font-size: 1.3rem;
+    }
+
+    .encabezado__titulo{
+        text-align: center;
+        font-size: 1.5rem;
+       
+    }
+    
+    .contenedor__img{
+        width: 100%;
+        height: 100%;
+    }
+
+   
+    .contenedor__media--video{
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        
+    }
+   
+    .contenido{
+        font-size: 1.5rem;
+    }
+    
+    .asesoramiento{
+        font-size: 1.5rem;
+    }
+    .programa{
+        font-size: 1.5rem;
+    }
+    .desarrollo{
+        font-size: 1.5rem;
+    }
+    .localizacion{
+        font-size: 1.5rem;
+    }
+    .resultado{
+        font-size: 1.5rem;
+    }
+    footer {
+        font-size: 2rem;
+    }
+
+    main .nosotros{
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto  auto;
+        grid-template-areas: "nosotros__team nosotros__team nosotros__team"
+                             "nosotros__camila nosotros__ale nosotros__jaqui";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .nosotros__team{
+        grid-area: nosotros__team;
+        margin-bottom: 2rem;
+    }
+    .nosotros__camila{
+        grid-area: nosotros__camila;
+        margin-left: 1rem;
+        
+    }
+    .nosotros__ale{
+        grid-area: nosotros__ale;
+    }
+    .nosotros__jaqui{
+        grid-area: nosotros__jaqui;
+        margin-right: 1rem;
+    }
+
+    .fotos{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "fotos__titulo fotos__titulo"
+                             "fotos__parrafo fotos__parrafo "
+                             "fotos__uno fotos__dos"
+                             "fotos__tres fotos__tres";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+   
+    .fotos__titulo{
+        grid-area: fotos__titulo;
+    }
+    .fotos__parrafo{
+        grid-area: fotos__parrafo;
+        margin-left: 4em;
+        margin-right: 4rem;
+    }
+    .fotos__uno{
+        grid-area: fotos__uno;
+        
+    }
+    .fotos__dos{
+        grid-area: fotos__dos;
+    }
+    .fotos__tres{
+        grid-area: fotos__tres;
+    }
+
+    
+}
+
+/* mediaqueries */ 
+/* para desktop arriba de 1080px*/ 
+@media screen and (min-width:1080px){
+    .encabezado__titulo{
+        font-size: 2rem; 
+        text-align: left;
+        margin-left: 2rem;
+    }
+    
+    .encabezado__menu--lista--linea li {
+        font-size: 2rem;
+        
+    }
+    
+    .fotos{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "fotos__titulo fotos__titulo fotos__titulo"
+                             "fotos__parrafo fotos__parrafo fotos__parrafo"
+                             "fotos__uno fotos__dos fotos__tres";
+    }
+
+    .proyecto {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "proyecto__fases proyecto__datos"
+                             "proyecto__concepto proyecto__antiproyecto"
+                             "proyecto__presupuesto proyecto__ejecucion"
+                             "proyecto__obra proyecto__obra";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+                            
+    }
+    
+    
+    .proyecto__fases{
+        grid-area: proyecto__fases;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .proyecto__datos{
+        grid-area: proyecto__datos;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .proyecto__concepto{
+        grid-area: proyecto__concepto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .proyecto__antiproyecto{
+        grid-area: proyecto__antiproyecto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .proyecto__presupuesto{
+        grid-area: proyecto__presupuesto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .proyecto__ejecucion{
+        grid-area: proyecto__ejecucion;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .proyecto__obra{
+        grid-area: proyecto__obra;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .proyecto__titulo--contract{
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .proyecto__titulo--descripcion{
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+}
